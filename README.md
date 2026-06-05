@@ -1,16 +1,87 @@
-# React + Vite
+# AI Project Documentation Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Project Documentation Generator is a full-stack web application that helps users generate professional software project documents using Artificial Intelligence.
 
-Currently, two official plugins are available:
+The application allows users to generate different types of documentation such as Project Proposals, Software Requirement Specifications (SRS), Business Requirement Documents (BRD), User Acceptance Testing (UAT) documents, and Presentation Content by simply providing project details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project was built to reduce the time spent creating documentation manually and to demonstrate the practical use of AI in software development and project management.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Generate Project Proposals
+* Generate Software Requirement Specifications (SRS)
+* Generate Business Requirement Documents (BRD)
+* Generate User Acceptance Testing (UAT) Documents
+* Generate PPT Presentation Content
+* AI-powered document generation using OpenRouter AI
+* Download generated documentation as PDF
+* Copy documentation to clipboard
+* Modern and responsive user interface
+* Markdown-based document formatting
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+* React.js
+* Vite
+* Axios
+* React Markdown
+* jsPDF
+* CSS3
+
+### Backend
+
+* FastAPI
+* Python
+* OpenRouter API
+* DeepSeek Chat V3
+
+## Project Structure
+
+```text
+frontend/
+│
+├── src/
+├── public/
+├── package.json
+
+backend/
+│
+├── main.py
+├── gemini_service.py
+├── requirements.txt
+```
+
+## How It Works
+
+1. Select the type of document you want to generate.
+2. Enter the project domain.
+3. Enter relevant keywords.
+4. Provide a project description.
+5. Click on "Generate Project Documentation".
+6. The AI generates a structured document based on the provided details.
+7. Users can copy or download the generated document as a PDF.
+
+## Purpose of the Project
+
+The purpose of this project is to simplify the documentation process in software projects. Documentation is often repetitive and time-consuming, especially for students and developers working on multiple projects. By using AI, the application can generate well-structured documentation within seconds.
+
+## Future Enhancements
+
+* User authentication
+* Document history and storage
+* DOCX export support
+* Multiple AI model integration
+* Cloud deployment
+* Team collaboration features
+
+## Author
+
+**Devika Sutar**
+
+MCA Student
+
+## Feedback
+
+Suggestions and feedback are always welcome. Feel free to contribute or raise issues for improvements.
